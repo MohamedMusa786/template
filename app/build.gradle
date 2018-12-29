@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "substratum.theme.template"
         minSdkVersion 23
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 2
         versionName "2.0"
     }
@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.github.javiersantos:PiracyChecker:0.0.3'
-    compile project(':substrate')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.github.javiersantos:PiracyChecker:0.0.3'
+    implementation project(':substrate')
 }
